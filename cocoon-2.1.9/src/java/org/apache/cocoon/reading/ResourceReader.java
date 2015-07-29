@@ -203,7 +203,9 @@ public class ResourceReader extends AbstractReader
      * @return The generated key hashes the src
      */
     public Serializable getKey() {
-        return inputSource.getURI();
+System.out.println("getKey"+inputSource.getURI());
+				return null;
+        //return inputSource.getURI();
     }
 
     /**
@@ -213,12 +215,13 @@ public class ResourceReader extends AbstractReader
      *         component is currently not cacheable.
      */
     public SourceValidity getValidity() {
-        if (hasRanges()) {
+				return null;
+       /* if (hasRanges()) {
             // This is a byte range request so we can't use the cache, return null.
             return null;
         } else {
             return inputSource.getValidity();
-        }
+        }*/
     }
 
     /**
