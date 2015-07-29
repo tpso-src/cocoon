@@ -31,7 +31,9 @@
            source="${source.vm}"
            nowarn="${compiler.nowarn}"
            compiler="${compiler}"
-           classpathref="classpath"/>
+           classpathref="classpath">
+<compilerarg value="-XDignore.symbol.file"/>
+</javac>
    </presetdef>
 
    <macrodef name="cocoon.compile">

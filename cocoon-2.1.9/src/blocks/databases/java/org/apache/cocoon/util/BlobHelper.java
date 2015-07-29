@@ -39,7 +39,12 @@ public class BlobHelper implements Blob{
     public InputStream getBinaryStream() {
         return this.in;
     }
+    public InputStream getBinaryStream(long l1, long l2) {
+        return this.in;
+    }
 
+public void free(){
+}
     public long length() {
         return length;
     }

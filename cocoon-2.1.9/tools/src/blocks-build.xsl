@@ -127,8 +127,8 @@
                      debug="${{compiler.debug}}"
                      optimize="${{compiler.optimize}}"
                      deprecation="${{compiler.deprecation}}"
-                     source="${{source.vm}}"
-                     target="${{target.vm}}"
+                     source="1.4"
+                     target="1.4"
                      nowarn="${{compiler.nowarn}}"
                      compiler="${{compiler}}">
                 <classpath refid="@{{name}}.classpath"/>
@@ -156,7 +156,8 @@
              debug="${{compiler.debug}}"
              optimize="${{compiler.optimize}}"
              deprecation="${{compiler.deprecation}}"
-             target="${{target.vm}}"
+                     source="1.4"
+                     target="1.4"
              nowarn="${{compiler.nowarn}}"
              compiler="${{compiler}}">
         <src path="@{{dir}}/java"/>

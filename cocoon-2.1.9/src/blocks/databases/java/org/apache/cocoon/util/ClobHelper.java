@@ -83,6 +83,11 @@ public class ClobHelper implements Clob{
     // @JDBC3_END@
 
 
+public Reader getCharacterStream(long l1,long l2){
+return null;
+}
+public void free(){
+}
     /**
      * Not implemented.
      */
